@@ -1,166 +1,134 @@
-# Personal Portfolio Website for me
+# 🌍 Tourism Website
 
-A modern and responsive personal portfolio website built using HTML, CSS, and JavaScript.
+A modern and responsive tourism website designed to showcase popular tourist destinations in India. The website allows users to explore favourite places and view detailed information and images for each destination.
 
-## Features
+## ✨ Features
 
-* Responsive Design
-* Animated Typing Effect
-* Glowing Profile Image
-* Animated Skill Progress Bars
-* 3D Hover Effects
-* Project Showcase Section
-* Resume Download Button
-* Social Media Integration
-* Professional Footer
+* Responsive Tourism Website
+* Attractive Home Page
+* Favourite Places Section
+* Destination Cards
+* Detailed View for Each Destination
+* Image Carousels
+* Interactive Navigation
+* Back Navigation Between Sections
+* Clean and User-Friendly Interface
+* Bootstrap-Based Responsive Layout
 
-## Technologies Used
+## 🏛️ Destinations Included
+
+The website currently showcases:
+
+* Taj Mahal
+* Golden Temple
+* Mysore Palace
+* Varanasi Temple
+
+Each destination includes images and a detailed description.
+
+## 🛠️ Technologies Used
 
 * HTML5
 * CSS3
 * JavaScript
-* Font Awesome
-* AWS S3 Static Website Hosting
+* Bootstrap 4
+* Google Fonts
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
-portfolio/
+0011tourism/
 │
+├── .github/
+│   └── workflows/
+│       └── main.yml
 ├── index.html
 ├── style.css
 ├── script.js
 ├── profile.png
-├── resume.pdf
 └── README.md
 ```
 
-## Local Setup
+## 🚀 How to Run
 
-Clone the repository:
-
-```bash
-git clone https://github.com/12345ujjwal/github-action-S3-portfolio-project.git
-```
-
-Navigate to the project directory:
+### 1. Clone the Repository
 
 ```bash
-cd <repository-name>
+git clone https://github.com/Pragnapupp850/0011tourism.git
 ```
 
-Open `index.html` in your browser.
+### 2. Navigate to the Project
+
+```bash
+cd 0011tourism
+```
+
+### 3. Open the Website
+
+Open `index.html` in any modern web browser.
+
+You can also open the project using Visual Studio Code and use a Live Server extension for easier development.
+
+## 🖥️ Website Sections
+
+### 🏠 Home
+
+The home page introduces the tourism website and provides a **Get Started** button to explore destinations.
+
+### ❤️ Favourite Places
+
+Users can browse popular tourist destinations such as the Taj Mahal, Golden Temple, Mysore Palace, and Varanasi Temple.
+
+### 📸 Detailed View
+
+Each destination has a separate detailed view containing:
+
+* Multiple destination images
+* Destination description
+* Image carousel
+* Navigation buttons
+
+## 🎨 Design
+
+The website uses:
+
+* Full-screen background images
+* Responsive cards
+* Rounded corners
+* Custom Google Fonts
+* Bootstrap components
+* Image carousels
+* Mobile-friendly layouts
+
+## 🔧 Future Improvements
+
+Some planned improvements for the website include:
+
+* 🔍 Destination Search
+* 📍 Google Maps Integration
+* ⭐ Destination Ratings and Reviews
+* ❤️ Save Favourite Destinations
+* 📅 Trip Planning
+* 🏨 Hotel Recommendations
+* ✈️ Travel Package Information
+* 🌦️ Weather Information
+* 📱 Improved Mobile UI
+* 🌐 More Tourist Destinations
+* 📩 Contact/Enquiry Form
+
+## 👩‍💻 Author
+
+**Pragna Shyva**
+
+AI & Data Science Student
+
+## 📌 Repository
+
+This project is maintained as a tourism website project for learning and demonstrating front-end web development using HTML, CSS, JavaScript, and Bootstrap.
 
 ---
 
-# Deploying on AWS S3
-
-### Step 1: Create an S3 Bucket
-
-1. Open AWS Management Console.
-2. Navigate to S3.
-3. Click **Create Bucket**.
-4. Enter a unique bucket name.
-5. Disable **Block All Public Access**.
-6. Create the bucket.
-
-### Step 2: Upload Website Files
-
-Upload all project files:
-
-```text
-index.html
-style.css
-script.js
-profile.png
-resume.pdf
-```
-
-### Step 3: Enable Static Website Hosting
-
-1. Open the bucket.
-2. Go to **Properties**.
-3. Scroll to **Static Website Hosting**.
-4. Click **Edit**.
-5. Enable Static Website Hosting.
-6. Set:
-
-```text
-Index document: index.html
-Error document: index.html
-```
-
-Save the changes.
-
-### Step 4: Add Bucket Policy
-
-Replace `YOUR_BUCKET_NAME` with your bucket name.
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "PublicReadAccess",
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*"
-    }
-  ]
-}
-```
-
-### Step 5: Access Your Website
-
-Navigate to:
-
-```text
-Properties → Static Website Hosting
-```
-
-Copy the Website Endpoint URL.
-
-Example:
-
-```text
-http://your-bucket-name.s3-website-ap-south-1.amazonaws.com
-```
-
-Your portfolio is now live.
-
----
-
-# AWS CLI Deployment (Optional)
-
-Configure AWS CLI:
-
-```bash
-aws configure
-```
-
-Upload files:
-
-```bash
-aws s3 sync . s3://YOUR_BUCKET_NAME
-```
-
-Whenever you update your website:
-
-```bash
-aws s3 sync . s3://YOUR_BUCKET_NAME --delete
-```
-
----
-
-# Future Improvements
-
-* CloudFront CDN
-* HTTPS using ACM Certificate
-* Custom Domain with Route 53
-* CI/CD using GitHub Actions
-* Contact Form Integration
-* Visitor Analytics
+⭐ If you found this project useful, consider giving the repository a star!
 
 ## Author
 
