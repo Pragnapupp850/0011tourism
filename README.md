@@ -45,7 +45,6 @@ Each destination includes images and a detailed description.
 ├── index.html
 ├── style.css
 ├── script.js
-├── profile.png
 └── README.md
 ```
 
