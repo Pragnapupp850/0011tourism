@@ -128,17 +128,12 @@ This project is maintained as a tourism website project for learning and demonst
 
 ---
 
-⭐ If you found this project useful, consider giving the repository a star!
-
 ## Author
 
-**Ujjwal Pratap Singh**
+**Pragna M P**
 
-Founder, Skill Nebula Pvt. Ltd.
-
-* Email: [nexaskilllab@gmail.com](mailto:nexaskilllab@gmail.com)
-* Website: [www.nexaskilllab.com](http://www.nexaskilllab.com)
-* LinkedIn: https://www.linkedin.com/company/skillnebula/
+* Email: [pragnapupp@gmail.com](mailto:pragnapupp@gmail.com)
+* LinkedIn: https://www.linkedin.com/in/pragna-m-p-16604a2bb?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
 ---
 
