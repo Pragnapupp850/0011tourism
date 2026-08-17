@@ -1,70 +1,15 @@
-const words = [
-    "Cloud Engineer",
-    "DevOps Engineer",
-    "Entrepreneur",
-    "AI Enthusiast",
-    "Founder"
-];
+function display(sectionId) {
+    document.getElementById("sectionHome").style.display = "none";
+    document.getElementById("sectionFavouritePlaces").style.display = "none";
+    document.getElementById("sectionTajMahalDetailedView").style.display = "none";
+    document.getElementById("sectionGoldenTempleDetailedView").style.display = "none";
+    document.getElementById("sectionMysorePalaceDetailedView").style.display = "none";
+    document.getElementById("sectionVaranasiTempleDetailedView").style.display = "none";
 
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-
-const typing = document.getElementById("typing");
-
-function typeEffect() {
-
-    let currentWord = words[wordIndex];
-
-    if (!isDeleting) {
-
-        typing.textContent =
-            currentWord.substring(0, charIndex + 1);
-
-        charIndex++;
-
-        if (charIndex === currentWord.length) {
-            isDeleting = true;
-            setTimeout(typeEffect, 1500);
-            return;
-        }
-
-    } else {
-
-        typing.textContent =
-            currentWord.substring(0, charIndex - 1);
-
-        charIndex--;
-
-        if (charIndex === 0) {
-            isDeleting = false;
-            wordIndex =
-                (wordIndex + 1) % words.length;
-        }
-    }
-
-    setTimeout(typeEffect, isDeleting ? 50 : 100);
+    document.getElementById(sectionId).style.display = "block";
 }
 
-typeEffect();
-particlesJS("particles-js",{
+display("sectionHome");
 
-particles:{
-number:{
-value:80
-},
 
-size:{
-value:3
-},
 
-move:{
-speed:2
-},
-
-line_linked:{
-enable:true
-}
-}
-
-});
